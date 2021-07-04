@@ -1,0 +1,27 @@
+.contentContainer {
+  padding: 40px;
+
+  border-radius: 50px;
+  background: #c1ccd2;
+  box-shadow: 6px 6px 7px #b7c2c8, -6px -6px 7px #cbd6dd;
+  text-shadow: 0.5px 0.5px 0 #fff;
+}
+
+.listContainer {
+  padding: 1rem 2rem 1rem 2rem;
+
+  border-radius: 50px;
+  background: #c1ccd2;
+  box-shadow: 6px 6px 7px #b7c2c8, -6px -6px 7px #cbd6dd;
+  text-shadow: 0.5px 0.5px 0 #fff;
+}
+
+.widthMinContent {
+  width: 220px;
+}
+
+.circleWrapper {
+  width: 144px;
+  height: 144px;
+  box-shadow: 6px 6px 7px #b7c2c8, -6px -6px 7px #cbd6dd;
+}

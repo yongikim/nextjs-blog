@@ -3,6 +3,7 @@ import Image from "next/image";
 import utilStyles from "../styles/utils.module.css";
 import Link from "next/link";
 import styles from "./layout.module.css";
+import neumoStyles from "../styles/neumo.module.css";
 
 const name = "Kim Yongi";
 export const siteTitle = "Yongi Kim";
@@ -34,14 +35,18 @@ export default function Layout({
       <header className={styles.header}>
         {home ? (
           <>
-            <Image
-              priority
-              src="/images/profile.jpg"
-              className={utilStyles.borderCircle}
-              height={144}
-              width={144}
-              alt={name}
-            />
+            <div
+              className={`${utilStyles.borderCircle} ${neumoStyles.circleWrapper}`}
+            >
+              <Image
+                priority
+                src="/images/profile.jpg"
+                className={utilStyles.borderCircle}
+                height={144}
+                width={144}
+                alt={name}
+              />
+            </div>
             <h1 className={utilStyles.heading2Xl}>{name}</h1>
           </>
         ) : (
@@ -68,7 +73,9 @@ export default function Layout({
       </header>
       <main>{children}</main>
       {!home && (
-        <div className={styles.backToHome}>
+        <div
+          className={`${styles.backToHome} ${neumoStyles.listContainer} ${neumoStyles.widthMinContent}`}
+        >
           <Link href="/">
             <a>← Back to home</a>
           </Link>
