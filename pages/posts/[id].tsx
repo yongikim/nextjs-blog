@@ -13,7 +13,7 @@ export default function Post({ postData }) {
       <Head>
         <title>{postData.title}</title>
       </Head>
-      <article className={neumoStyles.contentContainer}>
+      <article>
         <h1 className={utilStyles.headingXl}>{postData.title}</h1>
         <div>
           <Date dateString={postData.date} />

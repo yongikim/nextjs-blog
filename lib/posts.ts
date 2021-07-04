@@ -7,6 +7,8 @@ import remarkRehype from "remark-rehype";
 import rehypeDocument from "rehype-document";
 import rehypeFormat from "rehype-format";
 import rehypeStringify from "rehype-stringify";
+import rehypePrism from "@mapbox/rehype-prism";
+import remarkGfm from "remark-gfm";
 
 const postsDirectory = path.join(process.cwd(), "posts");
 
@@ -69,6 +71,7 @@ export async function getPostData(id) {
     // Parser (Required)
     .use(remarkParse)
     // Transformer from Markdown(remark) to HTML(rehype) (Required)
+    .use(remarkGfm)
     .use(remarkRehype)
     // Wrapper(Optional)
     .use(rehypeDocument, {
@@ -77,6 +80,7 @@ export async function getPostData(id) {
     // Formatter(Optional)
     .use(rehypeFormat)
     // Compiler(Required)
+    .use(rehypePrism)
     .use(rehypeStringify)
     .process(matterResult.content);
   const contentHtml = processedContent.toString();

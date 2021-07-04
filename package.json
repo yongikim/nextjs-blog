@@ -8,6 +8,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@mapbox/rehype-prism": "^0.7.0",
     "autoprefixer": "^10.2.6",
     "date-fns": "^2.22.1",
     "gray-matter": "^4.0.3",
@@ -17,14 +18,15 @@
     "postcss-preset-env": "^6.7.0",
     "react": "17.0.1",
     "react-dom": "17.0.1",
-    "unified": "^9.2.1",
-    "remark-parse": "^9.0.0",
-    "remark-rehype": "^8.1.0",
     "rehype-document": "^5.1.0",
     "rehype-format": "^3.1.0",
     "rehype-stringify": "^8.0.0",
-    "vfile-reporter": "^7.0.0",
-    "tailwindcss": "^2.2.4"
+    "remark-gfm": "^1.0.0",
+    "remark-parse": "^9.0.0",
+    "remark-rehype": "^8.1.0",
+    "tailwindcss": "^2.2.4",
+    "unified": "^9.2.1",
+    "vfile-reporter": "^7.0.0"
   },
   "devDependencies": {
     "@types/node": "^15.12.4",
