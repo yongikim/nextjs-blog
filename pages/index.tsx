@@ -33,7 +33,6 @@ export default function Home({ allPostsData }: Props) {
         <ul className={`${utilStyles.list}`}>
           {allPostsData.map(({ id, date, title }) => (
             <>
-              <hr />
               <li className={`${utilStyles.listItem}`} key={id}>
                 <Link href={`/posts/${id}`}>
                   <a>{title}</a>

@@ -11,6 +11,41 @@ body {
   text-shadow: 0.5px 0.5px 0 #fff;
 }
 
+table {
+  margin: auto;
+  width: 100%;
+  border-radius: 20px;
+  border-spacing: 0;
+  color: #406270;
+  text-align: center;
+  overflow: hidden;
+  box-shadow: 6px 6px 12px #b7c2c8, -6px -6px 12px #cbd6dd;
+}
+
+table thead {
+  border-radius: 20px;
+  box-shadow: 6px 6px 12px #b7c2c8, -6px -6px 12px #cbd6dd;
+}
+
+table th {
+  padding: 1rem 1rem;
+}
+
+table > tbody > tr > td {
+  padding: 0.5rem 1rem;
+  position: relative;
+}
+
+table > tbody > tr:first-child > td {
+  padding: 1rem 1rem 0.5rem;
+  position: relative;
+}
+
+table > tbody > tr:last-child > td {
+  padding: 0.5rem 1rem 1.5rem;
+  position: relative;
+}
+
 * {
   box-sizing: border-box;
 }

@@ -3,7 +3,7 @@ title: "Developing a RESTful API server with Actix Web, PostgreSQL and Diesel on
 date: "2021-07-04"
 ---
 
-## API spec.
+# API spec.
 
 | Methods | Endponts    | Functions                    |
 | :------ | :---------- | :--------------------------- |
@@ -13,11 +13,11 @@ date: "2021-07-04"
 | PATCH   | /todos/{id} | Update the todo.             |
 | DELETE  | /todos/{id} | Delete the todo.             |
 
-### GET /todos
+## GET /todos
 
 Get the list of all todos.
 
-**Response**
+### Response
 
 ```json
 {
@@ -36,11 +36,13 @@ Get the list of all todos.
 }
 ```
 
-### POST /todos
+
+
+## POST /todos
 
 Create a todo.
 
-**Params**
+### Params
 
 ```json
 {
@@ -48,7 +50,7 @@ Create a todo.
 }
 ```
 
-**Response**
+### Response
 
 On success:
 
@@ -66,9 +68,11 @@ On failure:
 }
 ```
 
-### GET /todos/{id}
 
-**Response**
+
+## GET /todos/{id}
+
+### Response
 
 On success:
 
@@ -88,9 +92,11 @@ On failure:
 }
 ```
 
-### PATCH /todos/{id}
 
-**Params**
+
+## PATCH /todos/{id}
+
+### Params
 
 ```json
 {
@@ -98,7 +104,7 @@ On failure:
 }
 ```
 
-**Response**
+### Response
 
 On success:
 
@@ -116,9 +122,11 @@ On error:
 }
 ```
 
-### DELETE /posts/{id}
 
-**Response**
+
+## DELETE /posts/{id}
+
+### Response
 
 On success:
 
