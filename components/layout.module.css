@@ -13,3 +13,17 @@
 .backToHome {
   margin: 3rem 0 0;
 }
+
+/* .navbar {
+  display: flex;
+  align-items: left;
+  flex-direction: row;
+  justify-content: left;
+  list-style: none;
+  margin-bottom: 2rem;
+  padding: 0;
+} */
+
+.navitem {
+  padding-right: 3rem;
+}

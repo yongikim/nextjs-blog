@@ -2,8 +2,6 @@ import Head from "next/head";
 import Image from "next/image";
 import utilStyles from "../styles/utils.module.css";
 import Link from "next/link";
-import styles from "./layout.module.css";
-import neumoStyles from "../styles/neumo.module.css";
 
 const name = "Kim Yongi";
 export const siteTitle = "Yongi Kim";
@@ -16,11 +14,11 @@ export default function Layout({
   home?: boolean;
 }) {
   return (
-    <div className={styles.container}>
+    <div className="max-w-2xl px-4 mt-12 mx-auto mb-24">
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <meta
-          name="discription"
+          name="description"
           content="Learn how to build a personal website using Next.js"
         />
         <meta
@@ -32,12 +30,21 @@ export default function Layout({
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
-      <header className={styles.header}>
-        {home ? (
+      <header className="flex flex-col items-center">
+        <ul className="w-full flex flex-row justify-start mb-8">
+          <li className="pr-12">
+            <a href="/">Home</a>
+          </li>
+          <li className="pr-12">
+            <a href="/">Blog</a>
+          </li>
+          <li className="pr-12">
+            <a href="/">About</a>
+          </li>
+        </ul>
+        {home && (
           <>
-            <div
-              className={`${utilStyles.borderCircle} ${neumoStyles.circleWrapper}`}
-            >
+            <div className="rounded-full mt-4">
               <Image
                 priority
                 src="/images/profile.jpg"
@@ -47,35 +54,14 @@ export default function Layout({
                 alt={name}
               />
             </div>
-            <h1 className={utilStyles.heading2Xl}>{name}</h1>
-          </>
-        ) : (
-          <>
-            <Link href="/">
-              <a>
-                <Image
-                  priority
-                  src="/images/profile.jpg"
-                  className={utilStyles.borderCircle}
-                  height={108}
-                  width={108}
-                  alt={name}
-                />
-              </a>
-            </Link>
-            <h2 className={utilStyles.headingLg}>
-              <Link href="/">
-                <a className={utilStyles.colorInherit}>{name}</a>
-              </Link>
-            </h2>
+            {/* <h1 className={utilStyles.heading2Xl}>{name}</h1> */}
+            <h1 className="text-4xl font-extrabold my-4 mx-0">{name}</h1>
           </>
         )}
       </header>
       <main>{children}</main>
       {!home && (
-        <div
-          className={`${styles.backToHome} ${neumoStyles.listContainer} ${neumoStyles.widthMinContent}`}
-        >
+        <div className={`mt-8 py-8 px-0 rounded-1 w-full`}>
           <Link href="/">
             <a>← Back to home</a>
           </Link>
