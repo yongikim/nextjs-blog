@@ -1,4 +1,5 @@
-import "../styles/global.css";
+// import "../styles/global.css";
+import "tailwindcss/tailwind.css";
 import "../styles/prism-nord.css";
 import { AppProps } from "next/app";
 

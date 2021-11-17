@@ -33,7 +33,7 @@ pre[class*="language-"] {
   margin: 0.5em 0;
   overflow: auto;
   border-radius: 1em;
-  box-shadow: 6px 6px 7px #b7c2c8, -6px -6px 7px #cbd6dd;
+  /* box-shadow: 6px 6px 7px #b7c2c8, -6px -6px 7px #cbd6dd; */
 }
 
 :not(pre) > code[class*="language-"],

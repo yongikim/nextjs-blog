@@ -6,9 +6,16 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   line-height: 1.6;
   font-size: 18px;
-  background: #c1ccd2;
+  /* background: #c1ccd2; */
   color: #406270;
-  text-shadow: 0.5px 0.5px 0 #fff;
+  /* text-shadow: 0.5px 0.5px 0 #fff; */
+}
+
+nav {
+  width: 100%;
+  /* box-shadow: 6px 6px 12px #b7c2c8, -6px -6px 12px #cbd6dd; */
+  justify-content: center;
+  align-items: center;
 }
 
 table {
@@ -16,15 +23,15 @@ table {
   width: 100%;
   border-radius: 20px;
   border-spacing: 0;
-  color: #406270;
+  /* color: #406270; */
   text-align: center;
   overflow: hidden;
-  box-shadow: 6px 6px 12px #b7c2c8, -6px -6px 12px #cbd6dd;
+  /* box-shadow: 6px 6px 12px #b7c2c8, -6px -6px 12px #cbd6dd; */
 }
 
 table thead {
   border-radius: 20px;
-  box-shadow: 6px 6px 12px #b7c2c8, -6px -6px 12px #cbd6dd;
+  /* box-shadow: 6px 6px 12px #b7c2c8, -6px -6px 12px #cbd6dd; */
 }
 
 table th {

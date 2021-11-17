@@ -53,3 +53,7 @@
   flex-direction: column;
   align-items: center;
 }
+
+.marginTop1rem {
+  margin-top: 1rem;
+}

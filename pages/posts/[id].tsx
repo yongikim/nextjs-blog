@@ -4,7 +4,6 @@ import { getAllPostIds, getPostData } from "../../lib/posts";
 import Date from "../../components/date";
 import utilStyles from "../../styles/utils.module.css";
 import { GetStaticPaths, GetStaticProps } from "next";
-import neumoStyles from "../../styles/neumo.module.css";
 
 // A React component to render the page
 export default function Post({ postData }) {
