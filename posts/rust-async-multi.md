@@ -1,9 +1,8 @@
 ---
 title: Rust で複数の非同期処理を並行的に実行する
-tags: Rust 非同期処理
-author: yongikim
-slide: false
+data: "2021-11-17"
 ---
+
 Rust では、 `fn` の代わりに `async fn` を用いることで、非同期関数を定義することができます。非同期関数は、呼び出し元のスレッドをブロックせず、並行的に実行されます。
 
 ```rust
