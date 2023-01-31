@@ -1,6 +1,5 @@
 import Head from "next/head";
 import Image from "next/image";
-import utilStyles from "../styles/utils.module.css";
 import Link from "next/link";
 
 const name = "Kim Yongi";
@@ -44,11 +43,11 @@ export default function Layout({
         </ul>
         {home && (
           <>
-            <div className="rounded-full mt-4">
+            <div className="mt-4">
               <Image
                 priority
                 src="/images/profile.jpg"
-                className={utilStyles.borderCircle}
+                className="rounded-full"
                 height={144}
                 width={144}
                 alt={name}
